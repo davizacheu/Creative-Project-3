@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {setState} from 'react';
 import  "./pokemon.css"; 
 import Logo from"./images/Logo.png"
 import EnterName from "./images/Enter-Pokemon-Name.png"
@@ -8,7 +9,7 @@ function PokemonResults(props){
         return null;
     }
     else{
-        return <img src={props.card}></img>;
+        return <img class= "card" src={props.card}></img>;
     }
 }
 class Search extends Component {
@@ -55,7 +56,9 @@ class Search extends Component {
             console.log(card);
             this.setState( {img: card}) ;
             
-        });
+        }.bind(this));
+
+
 
         if(this.state.show === false){
             this.state.show = true;

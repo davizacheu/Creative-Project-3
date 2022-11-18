@@ -44,14 +44,12 @@
         min-height:5%;
     }
 
-    PokemonResults{
-        opacity: 0;
+    
+
+    .card{
         transition: opacity 4s ease-in-out;
         height: fit-content;
         width: 100%;
-    }
-
-    .card{
         margin-left: 8%;
         box-shadow: 0 0 30px rgb(254, 233, 0);
         width: 20%;
