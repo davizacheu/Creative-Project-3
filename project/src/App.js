@@ -7,7 +7,7 @@ import About from "./pages/About";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/Creative-Project-3/build">
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
